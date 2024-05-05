@@ -76,14 +76,21 @@ export default class Income extends Component {
       <div>
         <Header />
         <div className="container" id="createPayment">
+
           <div id='incomeview'>
+
             <h1 id='totincome'>$ Total Income </h1>&nbsp;
             <h3 id='rs'>Total Amount  :RS.{this.state.totalAmount.toFixed(2)}</h3>
 
             <h3 id='rs1'>Previous Monthly Income: RS.{this.state.previousMonthAmount.toFixed(2)}</h3>
+
+
             <button id='comparebtn' onClick={() => this.compareIncome()}>Compare Income</button>
+
             <p id='compareResult'>{this.state.comparisonResult}</p>
+
           </div>
+
         </div>
       </div>
     );
