@@ -15,6 +15,7 @@ export default function CreatePayment() {
   const [date, setDate] = useState("");
   const history = useHistory();
   const [contactNumberValid, setContactNumberValid] = useState(false);
+ 
 
   function sendData(a) {
 
@@ -38,6 +39,7 @@ export default function CreatePayment() {
       alert(err)
     })
   }
+
 
   useEffect(() => {
     // Get the current date
