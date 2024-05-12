@@ -10,6 +10,8 @@ export default function EditNewSupplier(props) {
     const [PaymentStatus, setStatus] = useState("");
     const history = useHistory();
     const [token, setToken] = useState("");
+    //const [contactNumberValid, setContactNumberValid] = useState(false);
+ 
       
 
     useEffect(() => {
@@ -110,3 +112,14 @@ export default function EditNewSupplier(props) {
     </div>
   )
 }
+
+
+// pattern="^\d{10}$"
+//               title="Please enter a 10-digit number"  // Tooltip message
+//                             onChange={(e) => {
+//                                 setPhone(e.target.value);
+//                                 setContactNumberValid(/^\d{10}$/.test(e.target.value));
+//                             }} />
+//                         {!contactNumberValid && (
+//                             <p style={{ color: "red", fontSize: "14px", marginTop: "5px" }}>Please enter a valid 10-digit number</p>
+//                         )}
