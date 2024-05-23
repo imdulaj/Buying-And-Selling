@@ -78,7 +78,7 @@ router.get("/history/:id",(req, res) =>{
   
     History.findById(historyId,(err, history) =>{
       if(err){
-        return res.status(400).json({success:fails, err})
+        return res.status(400).json({ success: false, err }); 
       }
   
       return res.status(200).json({
